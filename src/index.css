@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .phone-frame {
+    @apply relative w-[375px] h-[812px] bg-black rounded-[55px] p-3 shadow-2xl;
+    box-shadow: 0 0 0 3px #1a1a2e, 0 25px 80px rgba(0,0,0,0.5);
+  }
+  .phone-screen {
+    @apply w-full h-full rounded-[42px] overflow-hidden relative;
+  }
+  .phone-notch {
+    @apply absolute top-0 left-1/2 -translate-x-1/2 w-[160px] h-[34px] bg-black rounded-b-3xl z-50;
+  }
+  .phone-home-indicator {
+    @apply absolute bottom-2 left-1/2 -translate-x-1/2 w-[134px] h-[5px] bg-white/30 rounded-full z-50;
+  }
+
+  .event-dot {
+    @apply w-2 h-2 rounded-full animate-pulse;
+  }
+
+  .metric-bar {
+    @apply h-2 rounded-full transition-all duration-1000 ease-out;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+}
