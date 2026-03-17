@@ -143,9 +143,11 @@ export default function App() {
       {/* Top bar */}
       <div className="flex items-center justify-between px-6 py-3 border-b border-white/10">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-sm font-bold text-white shadow-lg shadow-teal-500/30">
-            F
-          </div>
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Fluence"
+            className="w-8 h-8 rounded-xl shadow-lg shadow-teal-500/30"
+          />
           <span className="text-lg font-bold tracking-tight">Fluence</span>
           <span className="text-xs text-gray-500 ml-1">Behavioral Intelligence Platform</span>
         </div>
