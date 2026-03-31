@@ -61,7 +61,7 @@ const ShopHome: React.FC<ShopHomeProps> = ({ onNavigate, onEvent, cartCount, sea
   const [searchMode, setSearchMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
-  const searchDebounce = useRef<ReturnType<typeof setTimeout>>();
+  const searchDebounce = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   // Filter products by category AND search query
   const filtered = PRODUCTS.filter(p => {

@@ -302,7 +302,7 @@ const Impacto: React.FC = () => {
             <XAxis dataKey="name" tick={{ fontSize: 12, fill: '#6b7280' }} axisLine={false} tickLine={false} />
             <YAxis tick={{ fontSize: 12, fill: '#6b7280' }} axisLine={false} tickLine={false} tickFormatter={(v) => `${v}%`} />
             <Tooltip
-              formatter={(value: number) => `${value}%`}
+              formatter={(value) => `${value}%`}
               contentStyle={{ fontSize: 13, borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#111827', color: '#fff' }}
             />
             <Legend wrapperStyle={{ fontSize: 12, paddingTop: 12, color: '#9ca3af' }} />

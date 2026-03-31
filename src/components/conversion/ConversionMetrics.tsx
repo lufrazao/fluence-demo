@@ -62,7 +62,7 @@ const ConversionMetrics: React.FC<ConversionMetricsProps> = ({ lead }) => {
               <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#6b7280' }} axisLine={false} tickLine={false} />
               <YAxis hide />
               <Tooltip
-                formatter={(value: number) => [`${value}%`, 'Conversão']}
+                formatter={(value) => [`${value}%`, 'Conversão']}
                 contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid rgba(255,255,255,0.1)', backgroundColor: '#111827', color: '#fff' }}
               />
               <Bar dataKey="value" radius={[6, 6, 0, 0]} />
