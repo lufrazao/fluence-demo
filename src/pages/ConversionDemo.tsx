@@ -190,13 +190,14 @@ const ConversionDemo: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom hint */}
+      {/* Bottom hint + footer */}
       <div className="flex-shrink-0 px-6 py-2 border-t border-white/5 text-center">
         <p className="text-xs text-gray-500">
           {activeDemo === 'fintech'
             ? 'Interaja com o app bancario para ver a Fluence capturando comportamento em tempo real'
             : 'Navegue pela loja para ver a Fluence capturando sinais de compra em tempo real'}
         </p>
+        <p className="text-[10px] text-gray-600 mt-1">Fluence 2026, Todos os Direitos Reservados</p>
       </div>
     </div>
   );
